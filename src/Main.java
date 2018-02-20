@@ -32,29 +32,13 @@ public class Main {
 					break;
 				}
 				case 3: {
-					arrayCommands(z, 3, 0);
+					System.out.println(z.size());
 					System.out.println("If you wish to stop enter -1, otherwise continue");
 					break;
 				}
 			}
 		}
-		
-	}
-	
-	public static void arrayCommands(ArrayList<Integer> array, int command, int x){
-		if(command == 1){
-			array.add(x);
-			System.out.println(array);
-		}
-		else if(command == 2){
-			while(array.contains(x)){
-				array.remove(array.indexOf(x));
-			}
-			System.out.println(array);
-		}
-		else if(command == 3){
-			System.out.println(array.size());
-		}
+		in.close();
 	}
 	
 }
